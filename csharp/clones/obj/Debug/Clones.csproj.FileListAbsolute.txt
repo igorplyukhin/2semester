@@ -1,0 +1,9 @@
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\bin\Debug\Clones.exe.config
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\bin\Debug\Clones.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\bin\Debug\Clones.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\bin\Debug\nunit.framework.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.csprojAssemblyReference.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.csproj.CopyComplete
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.pdb
