@@ -7,3 +7,12 @@ C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.csproj.CoreCo
 C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.csproj.CopyComplete
 C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.exe
 C:\Users\Igor\Desktop\git\2semester\csharp\clones\obj\Debug\Clones.pdb
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\bin\Debug\Clones.exe.config
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\bin\Debug\Clones.exe
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\bin\Debug\Clones.pdb
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\bin\Debug\nunit.framework.dll
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\obj\Debug\Clones.csprojAssemblyReference.cache
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\obj\Debug\Clones.csproj.CoreCompileInputs.cache
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\obj\Debug\Clones.csproj.CopyComplete
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\obj\Debug\Clones.exe
+C:\Users\Galina\Desktop\Приложения\2semester\csharp\clones\obj\Debug\Clones.pdb
