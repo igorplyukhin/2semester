@@ -1,0 +1,10 @@
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\bin\Debug\yield.exe.config
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\bin\Debug\yield.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\bin\Debug\yield.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\bin\Debug\nunit.framework.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\bin\Debug\ZedGraph.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\obj\Debug\yield-return-smooth.csprojAssemblyReference.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\obj\Debug\yield-return-smooth.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\obj\Debug\yield-return-smooth.csproj.CopyComplete
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\obj\Debug\yield.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth\obj\Debug\yield.pdb
