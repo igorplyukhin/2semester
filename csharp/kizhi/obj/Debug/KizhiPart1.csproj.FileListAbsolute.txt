@@ -1,0 +1,2 @@
+/home/igor/Desktop/kontur/obj/Debug/KizhiPart1.csprojAssemblyReference.cache
+/home/igor/Desktop/kontur/obj/Debug/KizhiPart1.csproj.CoreCompileInputs.cache
