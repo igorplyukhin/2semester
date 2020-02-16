@@ -1,52 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TodoApplication
 {
-    public class StackItem<T>
-    {
-        public T Value { get; set; }
-        public StackItem<T> Next { get; set; }
-        public StackItem<T> Prev { get; set; }
-    }
-
     public class LimitedSizeStack<T>
     {
-        private StackItem<T> head;
-        private StackItem<T> tail;
         private readonly int lim;
+        private LinkedList<T> stack = new LinkedList<T>();
         private int count;
 
         public LimitedSizeStack(int limit) => lim = limit;
 
         public void Push(T item)
         {
-            if (head == null)
-                tail = head = new StackItem<T> {Value = item, Next = null, Prev = null};
-            else
-            {
-                var lastItem = new StackItem<T> {Value = item, Next = null, Prev = tail};
-                tail.Next = lastItem;
-                tail = lastItem;
-            }
+            stack.AddLast(new LinkedListNode<T>(item));
 
             count++;
             if (count > lim)
             {
-                head = head.Next;
-                head.Prev = null;
-                count--;
+               stack.RemoveFirst();
+               count--;
             }
         }
 
         public T Pop()
         {
-            if (tail == null) throw new InvalidOperationException();
-            var result = tail.Value;
-            tail = tail.Prev;
-            if (tail == null)
-                head = null;
+            var lastElement = stack.Last.Value;
+            stack.RemoveLast();
             count--;
-            return result;
+            return lastElement;
         }
 
         public int Count => count;

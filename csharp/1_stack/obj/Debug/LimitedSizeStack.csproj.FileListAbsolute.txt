@@ -20,3 +20,14 @@ C:\Users\Igor\Desktop\git\2semester\csharp\stack\obj\Debug\LimitedSizeStack.cspr
 C:\Users\Igor\Desktop\git\2semester\csharp\stack\obj\Debug\LimitedSizeStack.csproj.CopyComplete
 C:\Users\Igor\Desktop\git\2semester\csharp\stack\obj\Debug\TodoApplication.exe
 C:\Users\Igor\Desktop\git\2semester\csharp\stack\obj\Debug\TodoApplication.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\bin\Debug\TodoApplication.exe.config
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\bin\Debug\TodoApplication.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\bin\Debug\TodoApplication.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\bin\Debug\nunit.framework.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\obj\Debug\LimitedSizeStack.csprojAssemblyReference.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\obj\Debug\TodoApplication.Properties.Resources.resources
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\obj\Debug\LimitedSizeStack.csproj.GenerateResource.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\obj\Debug\LimitedSizeStack.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\obj\Debug\LimitedSizeStack.csproj.CopyComplete
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\obj\Debug\TodoApplication.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\1_stack\obj\Debug\TodoApplication.pdb

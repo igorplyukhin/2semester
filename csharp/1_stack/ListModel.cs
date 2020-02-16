@@ -1,81 +1,76 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace TodoApplication
 {
-    public class Command<TItem>
-    {
-        public TItem Item;
-
-        public Command(TItem item)
-        {
-            Item = item;
-        }
-    }
-
-    class AddItem<TItem>:Command<TItem>
-    {
-        public AddItem(TItem item) : base(item)
-        {
-        }
-    }
-
-    class RemoveItem<TItem>:Command<TItem>
-    {
-        public int Index;
-        public RemoveItem(TItem item, int index) : base(item)
-        {
-            Index = index;
-        }
-    }
-    
     public class ListModel<TItem>
     {
+        private readonly LimitedSizeStack<Command> backup;
         public List<TItem> Items { get; }
-        public int Limit;
-        public LimitedSizeStack<Command<TItem>> Backup;
 
         public ListModel(int limit)
         {
             Items = new List<TItem>();
-            Limit = limit;
-            Backup = new LimitedSizeStack<Command<TItem>>(limit);
+            backup = new LimitedSizeStack<Command>(limit);
         }
-
-        public void AddItem(TItem item)
+        
+        private abstract class Command
         {
-            Items.Add(item);
-            Backup.Push(new AddItem<TItem>(item));
+            public abstract void Execute();
+            public abstract void Undo();
         }
-
-        public void RemoveItem(int index)
+        
+        private class AddCommand : Command
         {
-            var element = Items[index];
-            Items.RemoveAt(index);
-            Backup.Push(new RemoveItem<TItem>(element, index));
-        }
+            private readonly List<TItem> items;
+            private readonly TItem item;
+            private readonly LimitedSizeStack<Command> backup;
 
-        public bool CanUndo()
-        {
-            return Backup.Count > 0;
-        }
-
-        public void Undo()
-        {
-            var lastCommand = Backup.Pop();
-            if (lastCommand is AddItem<TItem>)
+            public AddCommand(List<TItem> items, TItem item, LimitedSizeStack<Command> backup)
             {
-                Items.RemoveAt(Items.Count - 1);
+                this.items = items;
+                this.item = item;
+                this.backup = backup;
             }
-            else if (lastCommand is RemoveItem<TItem>)
+
+            public override void Execute()
             {
-                var removeCommand = (RemoveItem<TItem>) lastCommand;
-                Items.Insert(removeCommand.Index, removeCommand.Item);
+                items.Add(item);
+                backup.Push(this);
             }
-            else
-            {
-                throw new Exception("Unknown command");
-            }
+
+            public override void Undo() => items.RemoveAt(items.Count - 1);
         }
+        
+        private class RemoveCommand : Command
+        {
+            private readonly List<TItem> items;
+            private readonly LimitedSizeStack<Command> backup;
+            private readonly int index;
+            private TItem removedItem;
+
+            public RemoveCommand(List<TItem> items, LimitedSizeStack<Command> backup, int index)
+            {
+                this.items = items;
+                this.backup = backup;
+                this.index = index;
+            }
+
+            public override void Execute()
+            {
+                removedItem = items[index];
+                items.RemoveAt(index);
+                backup.Push(this);
+            }
+
+            public override void Undo() => items.Insert(index, removedItem);
+        }
+        
+        public void AddItem(TItem item) => new AddCommand(Items, item, backup).Execute();
+
+        public void RemoveItem(int index) => new RemoveCommand(Items, backup, index).Execute();
+
+        public bool CanUndo() => backup.Count > 0;
+
+        public void Undo() => backup.Pop().Undo();
     }
 }
