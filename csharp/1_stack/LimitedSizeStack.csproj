@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32bit>false</Prefer32bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32bit>false</Prefer32bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
@@ -53,7 +55,7 @@
     <Compile Include="LimitedSizeStack_PerformanceTest.cs" />
     <Compile Include="FinalizableClass.cs" />
     <Compile Include="ListModel_PerformanceTest.cs" />
-    <Compile Include="ListModel_Should.cs" />
+    <Compile Include="ListModel_should.cs" />
     <Compile Include="TasksForm.cs">
       <SubType>Form</SubType>
     </Compile>
