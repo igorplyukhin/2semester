@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace yield
@@ -7,17 +8,25 @@ namespace yield
         public static IEnumerable<DataPoint> MovingMax(this IEnumerable<DataPoint> data, int windowWidth)
         {
             var possibleMaximums = new LinkedList<double>();
+            var currentWindowElements = new Queue<double>();
             foreach (var point in data)
             {
-                while (possibleMaximums.Count > 0 && possibleMaximums.Last.Value <= point.OriginalY)
+                var removedElement = 0.0;
+                var firstElementIsRemoved = false;
+                currentWindowElements.Enqueue(point.OriginalY);
+                if (currentWindowElements.Count > windowWidth)
                 {
-                    possibleMaximums.RemoveLast();
+                    removedElement = currentWindowElements.Dequeue();
+                    firstElementIsRemoved = true;
                 }
 
-                possibleMaximums.AddLast(point.OriginalY);
-                if (possibleMaximums.Count > windowWidth)
+                if (firstElementIsRemoved && Math.Abs(removedElement - possibleMaximums.First.Value) < 1e-10)
                     possibleMaximums.RemoveFirst();
-                
+
+                while (possibleMaximums.Count > 0 && possibleMaximums.Last.Value <= point.OriginalY)
+                    possibleMaximums.RemoveLast();
+
+                possibleMaximums.AddLast(point.OriginalY);
                 point.MaxY = possibleMaximums.First.Value;
                 yield return point;
             }

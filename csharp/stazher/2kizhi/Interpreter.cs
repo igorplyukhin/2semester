@@ -8,8 +8,8 @@ namespace KizhiPart2
     {
         private readonly TextWriter _writer;
         private readonly Dictionary<string, long> _variables = new Dictionary<string, long>();
-        private readonly Dictionary<string, List<string>> _functions = new Dictionary<string, List<string>>();
-        private List<string> _settedCode = new List<string>();
+        private readonly Dictionary<string, string> _functions = new Dictionary<string, string>();
+        private string _uploadedCode;
         private bool _isSettingCode;
 
         public Interpreter(TextWriter writer)
@@ -21,32 +21,25 @@ namespace KizhiPart2
         {
             var splitedCommand = command.Split(' ');
             if (splitedCommand[0] == "end")
-            {
                 _isSettingCode = false;
-            }
             else if (splitedCommand[0] == "run")
-            {
-                ExecuteSettedCode(_settedCode);
-            }
+                ExecuteUploadedCode(_uploadedCode);
             else if (splitedCommand[1] == "code")
-            {
                 _isSettingCode = true;
-            }
             else if (_isSettingCode)
-            {
-                _settedCode.Add(command);
-            }
+                _uploadedCode = command;
         }
 
 
-        private void ExecuteSettedCode(List<string> settedCode)
+        private void ExecuteUploadedCode(string uploadedCode)
         {
             var lastDefinedFunc = "";
-            foreach (var line in settedCode)
+            var commands = uploadedCode.Split('\n');
+            foreach (var line in commands)
             {
                 var splitedLine = line.Split(' ');
-                if (line[0] == ' ')
-                    _functions[lastDefinedFunc].Add(line.Substring(4));
+                if (line.StartsWith(" "))
+                    _functions[lastDefinedFunc] += line.Substring(4) + '\n';
                 else
                     switch (splitedLine[0])
                     {
@@ -65,16 +58,14 @@ namespace KizhiPart2
                             ExecuteSavely(splitedLine[1], delegate { _variables.Remove(splitedLine[1]); });
                             break;
                         case "def":
-                            _functions.Add(splitedLine[1], new List<string>());
+                            _functions.Add(splitedLine[1], "");
                             lastDefinedFunc = splitedLine[1];
                             break;
                         case "call":
-                            ExecuteSettedCode(_functions[splitedLine[1]]);
-                            throw new Exception(String.Join(" ", _functions[splitedLine[1]]));
+                            ExecuteUploadedCode(_functions[splitedLine[1]]);
                             break;
                     }
             }
-            
         }
 
         private void ExecuteSavely(string keyToCheck, Action command)
