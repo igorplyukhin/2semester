@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd1a6a18-847a-4c10-b633-acd3774f7d3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/123.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.py" beforeDir="false" afterPath="$PROJECT_DIR$/divide.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/CloneVersionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/CloneVersionSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/CloneVersionSystem_should.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/CloneVersionSystem_should.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/ICloneVersionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/ICloneVersionSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/bin/Debug/Clones.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/bin/Debug/Clones.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/bin/Debug/Clones.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/bin/Debug/Clones.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +105,7 @@
       <updated>1580194473420</updated>
       <workItem from="1580194482474" duration="126000" />
       <workItem from="1581760159508" duration="122000" />
+      <workItem from="1582090786867" duration="95000" />
     </task>
     <servers />
   </component>

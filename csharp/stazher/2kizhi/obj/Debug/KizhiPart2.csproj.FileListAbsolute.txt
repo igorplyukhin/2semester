@@ -1,0 +1,9 @@
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/obj/Debug/KizhiPart2.csprojAssemblyReference.cache
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/obj/Debug/KizhiPart2.csproj.CoreCompileInputs.cache
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/bin/Debug/KizhiPart2.exe.config
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/bin/Debug/KizhiPart2.exe
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/bin/Debug/KizhiPart2.pdb
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/bin/Debug/nunit.framework.dll
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/obj/Debug/KizhiPart2.csproj.CopyComplete
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/obj/Debug/KizhiPart2.exe
+/home/igor/Desktop/repos/2semester/csharp/stazher/2kizhi/obj/Debug/KizhiPart2.pdb
