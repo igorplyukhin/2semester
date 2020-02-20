@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd1a6a18-847a-4c10-b633-acd3774f7d3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/CloneVersionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/CloneVersionSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/CloneVersionSystem_should.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/CloneVersionSystem_should.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/ICloneVersionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/ICloneVersionSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/bin/Debug/Clones.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/bin/Debug/Clones.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/bin/Debug/Clones.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/bin/Debug/Clones.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/2_clones/obj/Debug/Clones.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/divide.py" beforeDir="false" afterPath="$PROJECT_DIR$/divide.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.divide">
     <configuration name="2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -86,9 +82,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="longdiv_stripped" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/longdiv_stripped.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.divide" />
+        <item itemvalue="Python.longdiv_stripped" />
         <item itemvalue="Python.2" />
       </list>
     </recent_temporary>
@@ -106,6 +125,7 @@
       <workItem from="1580194482474" duration="126000" />
       <workItem from="1581760159508" duration="122000" />
       <workItem from="1582090786867" duration="95000" />
+      <workItem from="1582210896359" duration="9693000" />
     </task>
     <servers />
   </component>
@@ -113,25 +133,50 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1554" height="129" key="GridCell.Tab.0.bottom" timestamp="1581760281284">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="2505" height="475" key="GridCell.Tab.0.bottom" timestamp="1582220613116">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1554" height="129" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1581760281284" />
-    <state width="1554" height="129" key="GridCell.Tab.0.center" timestamp="1581760281283">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="2505" height="475" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582220613116" />
+    <state width="2505" height="475" key="GridCell.Tab.0.center" timestamp="1582220613116">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1554" height="129" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1581760281283" />
-    <state width="1554" height="129" key="GridCell.Tab.0.left" timestamp="1581760281283">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="2505" height="475" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582220613116" />
+    <state width="2505" height="475" key="GridCell.Tab.0.left" timestamp="1582220613116">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1554" height="129" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1581760281283" />
-    <state width="1554" height="129" key="GridCell.Tab.0.right" timestamp="1581760281284">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state width="2505" height="475" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582220613116" />
+    <state width="2505" height="475" key="GridCell.Tab.0.right" timestamp="1582220613116">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1554" height="129" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1581760281284" />
+    <state width="2505" height="475" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582220613116" />
+    <state width="2505" height="475" key="GridCell.Tab.1.bottom" timestamp="1582220613116">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="475" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582220613116" />
+    <state width="2505" height="475" key="GridCell.Tab.1.center" timestamp="1582220613116">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="475" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582220613116" />
+    <state width="2505" height="475" key="GridCell.Tab.1.left" timestamp="1582220613116">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="475" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582220613116" />
+    <state width="2505" height="475" key="GridCell.Tab.1.right" timestamp="1582220613116">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="475" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582220613116" />
+    <state x="657" y="255" key="SettingsEditor" timestamp="1582210996747">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="657" y="255" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1582210996747" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python$divide.coverage" NAME="divide Coverage Results" MODIFIED="1581760252512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$2.coverage" NAME="2 Coverage Results" MODIFIED="1580194598046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$longdiv_stripped.coverage" NAME="longdiv_stripped Coverage Results" MODIFIED="1582219050472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
+    <SUITE FILE_PATH="coverage/python$divide.coverage" NAME="divide Coverage Results" MODIFIED="1582220345345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
