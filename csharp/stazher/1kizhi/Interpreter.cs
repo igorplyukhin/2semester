@@ -8,31 +8,26 @@ namespace KizhiPart1
     {
         private readonly TextWriter _writer;
         private readonly Dictionary<string, long> _variables = new Dictionary<string, long>();
+        private readonly Dictionary<string, Action<string, string>> possibleCommands =
+            new Dictionary<string, Action<string, string>>();
 
         public Interpreter(TextWriter writer)
         {
             _writer = writer;
+            possibleCommands.Add("set", (key, value) => _variables.Add(key, int.Parse(value)));
+            possibleCommands.Add("sub",
+                (key, value) => ExecuteSavely(key, delegate { _variables[key] -= int.Parse(value); }));
+            possibleCommands.Add("print",
+                (key, value) => ExecuteSavely(key, delegate { _writer.WriteLine(_variables[key]); }));
+            possibleCommands.Add("rem",
+                (key, value) => ExecuteSavely(key, delegate { _variables.Remove(key); }));
         }
 
         public void ExecuteLine(string command)
         {
             var splitedCommand = command.Split(' ');
-            switch (splitedCommand[0])
-            {
-                case "set":
-                    _variables.Add(splitedCommand[1], int.Parse(splitedCommand[2]));
-                    break;
-                case "sub":
-                    ExecuteSavely(splitedCommand[1],
-                        delegate { _variables[splitedCommand[1]] -= int.Parse(splitedCommand[2]); });
-                    break;
-                case "print":
-                    ExecuteSavely(splitedCommand[1], delegate { _writer.WriteLine(_variables[splitedCommand[1]]); });
-                    break;
-                case "rem":
-                    ExecuteSavely(splitedCommand[1], delegate { _variables.Remove(splitedCommand[1]); });
-                    break;
-            }
+            var value = splitedCommand.Length > 2 ? splitedCommand[2] : null;
+            possibleCommands[splitedCommand[0]](splitedCommand[1], value);
         }
 
         private void ExecuteSavely(string keyToCheck, Action command)

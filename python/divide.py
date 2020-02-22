@@ -2,15 +2,7 @@
 
 
 def long_division(dividend, divider):
-    if divider == 0:
-        print("Can't divide by zero")
-        return
-
-    if dividend < divider:
-        print(dividend, "|", divider, sep="")
-        print(dividend, "|", 0, sep="")
-        return
-
+    output = ""
     last_printed_pos = 0
     zeros = 0
     idents_count = 0
@@ -18,15 +10,24 @@ def long_division(dividend, divider):
     result = dividend // divider
     str_result = str(result)
     str_dividend = str(dividend)
+    str_divider = str(divider)
     rest = dividend - divider * result
+
+    if divider == 0:
+        output += "Can't divide by zero"
+        return output
+
+    if dividend < divider:
+        output += str_dividend + "|" + str_divider + '\n' + str_dividend + "|" + "0"
+        return output
 
     lower_n = get_next_lower_n(0, str_result, divider)
     position += int_len(lower_n)
     upper_n = int(str_dividend[:position])
     if divider == 1:
         idents_count += 1
-    print(dividend, "|", divider, sep="")
-    print(lower_n, " " * (int_len(dividend) - int_len(lower_n)), "|", str_result, sep="")
+    output += str_dividend + "|" + str_divider + '\n'
+    output += str(lower_n) + " " * (int_len(dividend) - int_len(lower_n)) + "|" + str_result + '\n'
     last_printed_len = int_len(lower_n)
 
     for i in range(len(str_result) - 1):
@@ -35,11 +36,11 @@ def long_division(dividend, divider):
         lower_n = get_next_lower_n(i + 1, str_result, divider)
         position += 1
         if upper_n != 0 and lower_n != 0:
-            if (i != len(str_result) - 2):
+            if i != len(str_result) - 2:
                 idents_count -= zeros
                 zeros = 0
-            print(" " * idents_count, upper_n, sep="")
-            print(" " * (idents_count + int_len(upper_n) - int_len(lower_n)), lower_n, sep="")
+            output += " " * idents_count + str(upper_n) + '\n'
+            output += " " * (idents_count + int_len(upper_n) - int_len(lower_n)) + str(lower_n) + '\n'
             last_printed_pos = idents_count + int_len(upper_n) - int_len(lower_n)
             last_printed_len = int_len(lower_n)
             if divider == 1:
@@ -50,9 +51,11 @@ def long_division(dividend, divider):
 
     idents_count += int_len(upper_n) - int_len(upper_n - lower_n)
     if rest != 0:
-        print(" " * idents_count, rest, sep="")
+        output += " " * idents_count + str(rest)
     else:
-        print(" " * (last_printed_pos + last_printed_len - 1), rest, sep="")
+        output += " " * (last_printed_pos + last_printed_len - 1) + str(rest)
+
+    return output
 
 
 def int_len(a):
