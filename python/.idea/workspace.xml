@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd1a6a18-847a-4c10-b633-acd3774f7d3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../csharp/stazher/1kizhi/Interpreter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/stazher/1kizhi/Interpreter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/divide.py" beforeDir="false" afterPath="$PROJECT_DIR$/divide.py" afterDir="false" />
-    </list>
+    <list default="true" id="fd1a6a18-847a-4c10-b633-acd3774f7d3b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,6 +122,7 @@
       <workItem from="1582090786867" duration="95000" />
       <workItem from="1582210896359" duration="9693000" />
       <workItem from="1582271684051" duration="3102000" />
+      <workItem from="1582361357445" duration="336000" />
     </task>
     <servers />
   </component>

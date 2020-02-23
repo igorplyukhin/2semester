@@ -1,0 +1,11 @@
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/bin/Debug/CommandLineCalculator.dll
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/bin/Debug/CommandLineCalculator.pdb
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/bin/Debug/FluentAssertions.dll
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/bin/Debug/nunit.framework.dll
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/bin/Debug/FluentAssertions.xml
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/bin/Debug/nunit.framework.xml
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/obj/Debug/CommandLineCalculator.csprojAssemblyReference.cache
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/obj/Debug/CommandLineCalculator.csproj.CoreCompileInputs.cache
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/obj/Debug/CommandLineCalculator.csproj.CopyComplete
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/obj/Debug/CommandLineCalculator.dll
+/home/igor/Desktop/repos/2semester/csharp/stazher/4calc/obj/Debug/CommandLineCalculator.pdb

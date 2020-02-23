@@ -2,14 +2,48 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace KizhiPart2
+namespace KizhiPart3
 {
+    public class Debugger
+    {
+        private readonly TextWriter _writer;
+        private readonly Interpreter _interpreter;
+        private readonly Dictionary<string, Action<string>> _mainOperators =
+            new Dictionary<string, Action<string>>();
+
+        private bool _isSettingCode;
+        private string _uploadedCode;
+        public Debugger(TextWriter writer)
+        {
+            _writer = writer;
+            _interpreter = new Interpreter(writer);
+            _mainOperators.Add("set code", s => _isSettingCode = true);
+            _mainOperators.Add("end set code", s => _isSettingCode = false);
+            _mainOperators.Add("run", s => _interpreter.ExecuteLine(_uploadedCode));
+        }
+
+        public void ExecuteLine(string command)
+        {
+            if (_isSettingCode)
+            {
+                _uploadedCode = command;
+                _isSettingCode = false;
+            }
+            else
+            {
+                if (command.StartsWith("add break"))
+                    command = "add break";
+                
+                _mainOperators[command](null);
+            }
+        }
+    }
+    
     public class Interpreter
     {
         private readonly TextWriter _writer;
         private readonly Dictionary<string, long> _variables = new Dictionary<string, long>();
         private readonly Dictionary<string, string> _functions = new Dictionary<string, string>();
-        private string _uploadedCode;
         private bool _isSettingCode;
         private readonly Dictionary<string, Action<string, string>> _operators =
             new Dictionary<string, Action<string, string>>();
@@ -36,17 +70,8 @@ namespace KizhiPart2
 
         public void ExecuteLine(string command)
         {
-            var splitedCommand = command.Split(' ');
-            if (splitedCommand[0] == "end")
-                _isSettingCode = false;
-            else if (splitedCommand[0] == "run")
-                ExecuteUploadedCode(_uploadedCode);
-            else if (splitedCommand[1] == "code")
-                _isSettingCode = true;
-            else if (_isSettingCode)
-                _uploadedCode = command;
+            ExecuteUploadedCode(command);
         }
-    
 
         private void ExecuteUploadedCode(string uploadedCode)
         {
