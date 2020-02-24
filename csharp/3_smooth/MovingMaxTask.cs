@@ -11,18 +11,14 @@ namespace yield
             var currentWindowElements = new Queue<double>();
             foreach (var point in data)
             {
-                var removedElement = 0.0;
-                var firstElementIsRemoved = false;
                 currentWindowElements.Enqueue(point.OriginalY);
                 if (currentWindowElements.Count > windowWidth)
                 {
-                    removedElement = currentWindowElements.Dequeue();
-                    firstElementIsRemoved = true;
+                    var removedElement = currentWindowElements.Dequeue();
+                    if (Math.Abs(removedElement - possibleMaximums.First.Value) < 1e-10)
+                        possibleMaximums.RemoveFirst();
                 }
-
-                if (firstElementIsRemoved && Math.Abs(removedElement - possibleMaximums.First.Value) < 1e-10)
-                    possibleMaximums.RemoveFirst();
-
+                
                 while (possibleMaximums.Count > 0 && possibleMaximums.Last.Value <= point.OriginalY)
                     possibleMaximums.RemoveLast();
 

@@ -8,3 +8,14 @@
 /home/igor/Desktop/repos/2semester/csharp/stazher/3kizhi/obj/Debug/KizhiPart3.csproj.CopyComplete
 /home/igor/Desktop/repos/2semester/csharp/stazher/3kizhi/obj/Debug/KizhiPart3.exe
 /home/igor/Desktop/repos/2semester/csharp/stazher/3kizhi/obj/Debug/KizhiPart3.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\obj\Debug\KizhiPart3.csprojAssemblyReference.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\obj\Debug\KizhiPart3.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\bin\Debug\KizhiPart3.exe.config
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\bin\Debug\KizhiPart3.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\bin\Debug\KizhiPart3.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\obj\Debug\KizhiPart3.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\obj\Debug\KizhiPart3.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\bin\Debug\nunit.framework.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\bin\Debug\nunit.framework.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\bin\Debug\nunit.framework.xml
+C:\Users\Igor\Desktop\git\2semester\csharp\stazher\3kizhi\obj\Debug\KizhiPart3.csproj.CopyComplete
