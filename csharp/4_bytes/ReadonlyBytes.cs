@@ -8,13 +8,27 @@ namespace hashes
     public class ReadonlyBytes : IEnumerable
     {
         private readonly byte[] _bytes;
+        public readonly int Hash;
         public int Length => _bytes.Length;
+        
 
         public ReadonlyBytes(params byte[] items)
         {
             if (items == null)
                 throw new ArgumentNullException();
             _bytes = items;
+            
+            unchecked
+            {
+                var p = 9973;
+                var hash = 216613;
+                foreach (var e in _bytes)
+                {
+                    hash = (hash * p + e) % 32768;
+                }
+
+                Hash = hash;
+            }
         }
 
         public byte this[int index]
@@ -41,7 +55,7 @@ namespace hashes
 
         public override bool Equals(object obj)
         {
-            if (!(obj is ReadonlyBytes)) return false;
+            if (obj == null || obj.GetType() != typeof(ReadonlyBytes)) return false;
             var secondBytes = (ReadonlyBytes) obj;
             if (_bytes.Length != secondBytes.Length)
                 return false;
@@ -56,17 +70,7 @@ namespace hashes
 
         public override int GetHashCode()
         {
-            unchecked
-            {
-                var p = 9973;
-                var hash = 216613;
-                foreach (var e in _bytes)
-                {
-                    hash = (hash * p + e) % 32768;
-                }
-
-                return hash;
-            }
+            return Hash;
         }
 
         public override string ToString()
