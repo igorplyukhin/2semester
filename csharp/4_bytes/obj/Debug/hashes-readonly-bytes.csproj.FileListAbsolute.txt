@@ -1,13 +1,3 @@
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/obj/Debug/hashes-readonly-bytes.csprojAssemblyReference.cache
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/obj/Debug/hashes-readonly-bytes.csproj.CoreCompileInputs.cache
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/bin/Debug/readonly-bytes.exe.config
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/bin/Debug/readonly-bytes.exe
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/bin/Debug/readonly-bytes.pdb
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/bin/Debug/nunit.framework.dll
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/bin/Debug/nunitlite.dll
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/obj/Debug/hashes-readonly-bytes.csproj.CopyComplete
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/obj/Debug/readonly-bytes.exe
-C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/obj/Debug/readonly-bytes.pdb
 /home/igor/Desktop/repos/2semester/csharp/4_bytes/bin/Debug/readonly-bytes.exe.config
 /home/igor/Desktop/repos/2semester/csharp/4_bytes/bin/Debug/readonly-bytes.exe
 /home/igor/Desktop/repos/2semester/csharp/4_bytes/bin/Debug/readonly-bytes.pdb
@@ -18,3 +8,13 @@ C:/Users/Igor/Desktop/git/2semester/csharp/4_bytes/obj/Debug/readonly-bytes.pdb
 /home/igor/Desktop/repos/2semester/csharp/4_bytes/obj/Debug/hashes-readonly-bytes.csproj.CopyComplete
 /home/igor/Desktop/repos/2semester/csharp/4_bytes/obj/Debug/readonly-bytes.exe
 /home/igor/Desktop/repos/2semester/csharp/4_bytes/obj/Debug/readonly-bytes.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\bin\Debug\readonly-bytes.exe.config
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\bin\Debug\readonly-bytes.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\bin\Debug\readonly-bytes.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\bin\Debug\nunit.framework.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\bin\Debug\nunitlite.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\obj\Debug\hashes-readonly-bytes.csprojAssemblyReference.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\obj\Debug\hashes-readonly-bytes.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\obj\Debug\hashes-readonly-bytes.csproj.CopyComplete
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\obj\Debug\readonly-bytes.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\4_bytes\obj\Debug\readonly-bytes.pdb

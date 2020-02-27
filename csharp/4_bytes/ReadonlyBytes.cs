@@ -7,27 +7,27 @@ namespace hashes
 {
     public class ReadonlyBytes : IEnumerable
     {
-        private readonly byte[] _bytes;
-        public readonly int Hash;
-        public int Length => _bytes.Length;
-        
+        private readonly byte[] bytes;
+        private readonly int hash;
+        public int Length => bytes.Length;
+
 
         public ReadonlyBytes(params byte[] items)
         {
             if (items == null)
                 throw new ArgumentNullException();
-            _bytes = items;
-            
+            bytes = items;
             unchecked
             {
-                var p = 9973;
-                var hash = 216613;
-                foreach (var e in _bytes)
+                ulong hash = 14695981039346656037;
+                ulong prime = 1099511628211;
+                for (var i = 0; i < Length; i++)
                 {
-                    hash = (hash * p + e) % 32768;
+                    hash *= prime;
+                    hash = hash ^ bytes[i];
                 }
 
-                Hash = hash;
+                this.hash = (int)hash;
             }
         }
 
@@ -36,16 +36,14 @@ namespace hashes
             get
             {
                 if (index < 0 || index > Length) throw new IndexOutOfRangeException();
-                return _bytes[index];
+                return bytes[index];
             }
         }
 
         public IEnumerator<byte> GetEnumerator()
         {
-            foreach (var e in _bytes)
-            {
+            foreach (var e in bytes)
                 yield return e;
-            }
         }
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
@@ -57,11 +55,11 @@ namespace hashes
         {
             if (obj == null || obj.GetType() != typeof(ReadonlyBytes)) return false;
             var secondBytes = (ReadonlyBytes) obj;
-            if (_bytes.Length != secondBytes.Length)
+            if (bytes.Length != secondBytes.Length)
                 return false;
             for (var i = 0; i < Length; i++)
             {
-                if (_bytes[i] != secondBytes[i])
+                if (bytes[i] != secondBytes[i])
                     return false;
             }
 
@@ -70,7 +68,7 @@ namespace hashes
 
         public override int GetHashCode()
         {
-            return Hash;
+            return hash;
         }
 
         public override string ToString()
@@ -78,18 +76,18 @@ namespace hashes
             var sb = new StringBuilder();
             if (Length == 0)
                 return "[]";
-            
+
             if (Length == 1)
-                return $"[{_bytes[0]}]";
-            
+                return $"[{bytes[0]}]";
+
             for (var i = 0; i < Length; i++)
             {
                 if (i == 0)
-                    sb.Append($"[{_bytes[i]},");
+                    sb.Append($"[{bytes[i]},");
                 else if (i == Length - 1)
-                    sb.Append($" {_bytes[i]}]");
-                else 
-                    sb.Append($" {_bytes[i]},");
+                    sb.Append($" {bytes[i]}]");
+                else
+                    sb.Append($" {bytes[i]},");
             }
 
             return sb.ToString();
