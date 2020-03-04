@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd1a6a18-847a-4c10-b633-acd3774f7d3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/statistic/homestat_stripped.py" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/homestat_stripped.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/statistic/test_homestat.py" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/test_homestat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for statistic.test_homestat.TestStatistics">
+  <component name="RunManager" selected="Python.test">
     <configuration name="divide" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="longdiv_stripped" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,12 +92,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/longdiv_stripped.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python tests.Unittests for statistic.test_homestat.TestStatistics" />
         <item itemvalue="Python.homestat_stripped (1)" />
         <item itemvalue="Python tests.Unittests for test_homestat.TestStatistics" />
         <item itemvalue="Python.divide" />
-        <item itemvalue="Python.longdiv_stripped" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +168,7 @@
       <workItem from="1582543067015" duration="5247000" />
       <workItem from="1582555492081" duration="7062000" />
       <workItem from="1582613616603" duration="3008000" />
+      <workItem from="1582876696548" duration="3598000" />
     </task>
     <servers />
   </component>
@@ -182,45 +180,45 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="220" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1582558353328" />
-    <state width="1554" height="279" key="GridCell.Tab.0.bottom" timestamp="1582616626280">
+    <state width="1554" height="347" key="GridCell.Tab.0.bottom" timestamp="1582881819951">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="279" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1582616626280" />
+    <state width="1554" height="347" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1582881819951" />
     <state width="2505" height="540" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570187" />
-    <state width="1554" height="279" key="GridCell.Tab.0.center" timestamp="1582616626279">
+    <state width="1554" height="347" key="GridCell.Tab.0.center" timestamp="1582881819951">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="279" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1582616626279" />
+    <state width="1554" height="347" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1582881819951" />
     <state width="2505" height="540" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570187" />
-    <state width="1554" height="279" key="GridCell.Tab.0.left" timestamp="1582616626279">
+    <state width="1554" height="347" key="GridCell.Tab.0.left" timestamp="1582881819950">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="279" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1582616626279" />
+    <state width="1554" height="347" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1582881819950" />
     <state width="2505" height="540" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570187" />
-    <state width="1554" height="279" key="GridCell.Tab.0.right" timestamp="1582616626280">
+    <state width="1554" height="347" key="GridCell.Tab.0.right" timestamp="1582881819951">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="279" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1582616626280" />
+    <state width="1554" height="347" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1582881819951" />
     <state width="2505" height="540" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570187" />
-    <state width="1554" height="279" key="GridCell.Tab.1.bottom" timestamp="1582616626281">
+    <state width="1554" height="279" key="GridCell.Tab.1.bottom" timestamp="1582881819943">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="279" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1582616626281" />
+    <state width="1554" height="279" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1582881819943" />
     <state width="2505" height="379" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570183" />
-    <state width="1554" height="279" key="GridCell.Tab.1.center" timestamp="1582616626280">
+    <state width="1554" height="279" key="GridCell.Tab.1.center" timestamp="1582881819942">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="279" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1582616626280" />
+    <state width="1554" height="279" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1582881819942" />
     <state width="2505" height="379" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570183" />
-    <state width="1554" height="279" key="GridCell.Tab.1.left" timestamp="1582616626280">
+    <state width="1554" height="279" key="GridCell.Tab.1.left" timestamp="1582881819942">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="279" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1582616626280" />
+    <state width="1554" height="279" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1582881819942" />
     <state width="2505" height="379" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570183" />
-    <state width="1554" height="279" key="GridCell.Tab.1.right" timestamp="1582616626281">
+    <state width="1554" height="279" key="GridCell.Tab.1.right" timestamp="1582881819943">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="279" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1582616626281" />
+    <state width="1554" height="279" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1582881819943" />
     <state width="2505" height="379" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570183" />
     <state x="411" y="163" width="1022" height="737" key="SettingsEditor" timestamp="1582614132879">
       <screen x="0" y="0" width="1600" height="900" />
@@ -242,6 +240,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python$divide.coverage" NAME="divide Coverage Results" MODIFIED="1582542778665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$homestat_stripped_.coverage" NAME="homestat_stripped  Coverage Results" MODIFIED="1582562004215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statistic" />
+    <SUITE FILE_PATH="coverage/python$test.coverage" NAME="test Coverage Results" MODIFIED="1582880780198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$Unittests_for_test_homestat_TestStatistics.coverage" NAME="Unittests for test_homestat.TestStatistics Coverage Results" MODIFIED="1582562083170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statistic" />
     <SUITE FILE_PATH="coverage/python$homestat_stripped__1_.coverage" NAME="homestat_stripped (1) Coverage Results" MODIFIED="1582615386522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statistic" />
     <SUITE FILE_PATH="coverage/python$longdiv_stripped.coverage" NAME="longdiv_stripped Coverage Results" MODIFIED="1582219050472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />

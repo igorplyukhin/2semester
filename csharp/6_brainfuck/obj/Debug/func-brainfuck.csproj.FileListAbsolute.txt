@@ -1,0 +1,10 @@
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/bin/Debug/brainfuck.exe.config
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/bin/Debug/brainfuck.exe
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/bin/Debug/brainfuck.pdb
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/bin/Debug/nunit.framework.dll
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/bin/Debug/nunitlite.dll
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/obj/Debug/func-brainfuck.csprojAssemblyReference.cache
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/obj/Debug/func-brainfuck.csproj.CoreCompileInputs.cache
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/obj/Debug/func-brainfuck.csproj.CopyComplete
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/obj/Debug/brainfuck.exe
+/home/igor/Desktop/repos/2semester/csharp/6_brainfuck/obj/Debug/brainfuck.pdb

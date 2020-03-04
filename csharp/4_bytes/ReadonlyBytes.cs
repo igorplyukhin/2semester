@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 
 namespace hashes
 {
@@ -11,12 +10,8 @@ namespace hashes
         private readonly int hash;
         public int Length => bytes.Length;
 
-
-        public ReadonlyBytes(params byte[] items)
+        private int CalcHash()
         {
-            if (items == null)
-                throw new ArgumentNullException();
-            bytes = items;
             unchecked
             {
                 ulong hash = 14695981039346656037;
@@ -27,18 +22,20 @@ namespace hashes
                     hash = hash ^ bytes[i];
                 }
 
-                this.hash = (int)hash;
+                return (int) hash;
             }
         }
 
-        public byte this[int index]
+
+        public ReadonlyBytes(params byte[] items)
         {
-            get
-            {
-                if (index < 0 || index > Length) throw new IndexOutOfRangeException();
-                return bytes[index];
-            }
+            if (items == null)
+                throw new ArgumentNullException();
+            bytes = items;
+            hash = CalcHash();
         }
+
+        public byte this[int index] => bytes[index];
 
         public IEnumerator<byte> GetEnumerator()
         {
@@ -46,10 +43,7 @@ namespace hashes
                 yield return e;
         }
 
-        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
         public override bool Equals(object obj)
         {
@@ -66,31 +60,8 @@ namespace hashes
             return true;
         }
 
-        public override int GetHashCode()
-        {
-            return hash;
-        }
+        public override int GetHashCode() => hash;
 
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            if (Length == 0)
-                return "[]";
-
-            if (Length == 1)
-                return $"[{bytes[0]}]";
-
-            for (var i = 0; i < Length; i++)
-            {
-                if (i == 0)
-                    sb.Append($"[{bytes[i]},");
-                else if (i == Length - 1)
-                    sb.Append($" {bytes[i]}]");
-                else
-                    sb.Append($" {bytes[i]},");
-            }
-
-            return sb.ToString();
-        }
+        public override string ToString() => $"[{string.Join(", ", bytes)}]";
     }
 }
