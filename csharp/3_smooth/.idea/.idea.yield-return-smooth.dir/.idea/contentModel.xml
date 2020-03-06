@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Igor\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Igor\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_.19.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Igor\Desktop\git\2semester\csharp\3_smooth" t="IncludeRecursive">
+    <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_.19.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="App.config" t="Include" />
-      <e p="bin" t="ExcludeRecursive" />
       <e p="DataPoint.cs" t="Include" />
       <e p="DataSource.cs" t="Include" />
       <e p="ExpSmoothingTask.cs" t="Include" />
@@ -16,12 +15,13 @@
       <e p="MovingAverageTests.cs" t="Include" />
       <e p="MovingMaxTask.cs" t="Include" />
       <e p="MovingMaxTests.cs" t="Include" />
-      <e p="obj" t="ExcludeRecursive" />
-      <e p="packages" t="ExcludeRecursive" />
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include" />
-      <e p="yield-return-smooth.csproj" t="IncludeRecursive" />
       <e p="ZedGraph.dll" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="yield-return-smooth.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
