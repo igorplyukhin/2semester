@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd1a6a18-847a-4c10-b633-acd3774f7d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/philosophy/phil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philosophy/test_phil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/.idea/.idea.yield-return-smooth.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/.idea/.idea.yield-return-smooth.dir/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/ExpSmoothingTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/ExpSmoothingTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/bin/Debug/yield.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/bin/Debug/yield.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/bin/Debug/yield.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/bin/Debug/yield.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/obj/Debug/yield-return-smooth.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/obj/Debug/yield-return-smooth.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/obj/Debug/yield-return-smooth.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/obj/Debug/yield-return-smooth.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/obj/Debug/yield.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/obj/Debug/yield.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/obj/Debug/yield.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/obj/Debug/yield.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/3_smooth/yield-return-smooth.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/3_smooth/yield-return-smooth.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/philosophy/phil.py" beforeDir="false" afterPath="$PROJECT_DIR$/philosophy/phil.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,29 +40,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_phil.py">
-    <configuration name="homestat_stripped (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/statistic" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/statistic/homestat_stripped.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests for philosophy.test_phil.TestLinksExtractor">
     <configuration name="phil" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for statistic.test_homestat.TestStatistics" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for philosophy.test_phil.TestLinksExtractor" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,7 +96,22 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;statistic.test_homestat.TestStatistics&quot;" />
+      <option name="_new_target" value="&quot;philosophy.test_phil.TestLinksExtractor&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for philosophy.test_phil.TestLinksExtractor.test_simple_link" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;philosophy.test_phil.TestLinksExtractor.test_simple_link&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -149,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_phil.py" />
+        <item itemvalue="Python tests.Unittests for philosophy.test_phil.TestLinksExtractor" />
         <item itemvalue="Python.phil" />
+        <item itemvalue="Python tests.Unittests in test_phil.py" />
+        <item itemvalue="Python tests.Unittests for philosophy.test_phil.TestLinksExtractor.test_simple_link" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python tests.Unittests for statistic.test_homestat.TestStatistics" />
-        <item itemvalue="Python.homestat_stripped (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +164,10 @@
       <workItem from="1582613616603" duration="3008000" />
       <workItem from="1582876696548" duration="3598000" />
       <workItem from="1583493483662" duration="3756000" />
+      <workItem from="1583561019365" duration="1928000" />
+      <workItem from="1583568178716" duration="34000" />
+      <workItem from="1583568401099" duration="4105000" />
+      <workItem from="1583573255063" duration="852000" />
     </task>
     <servers />
   </component>
@@ -195,45 +182,45 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="220" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1582558353328" />
-    <state width="1554" height="257" key="GridCell.Tab.0.bottom" timestamp="1583497619050">
+    <state width="1554" height="280" key="GridCell.Tab.0.bottom" timestamp="1583574180632">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="257" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1583497619050" />
+    <state width="1554" height="280" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1583574180632" />
     <state width="2505" height="540" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570187" />
-    <state width="1554" height="257" key="GridCell.Tab.0.center" timestamp="1583497619049">
+    <state width="1554" height="280" key="GridCell.Tab.0.center" timestamp="1583574180630">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="257" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1583497619049" />
+    <state width="1554" height="280" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1583574180630" />
     <state width="2505" height="540" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570187" />
-    <state width="1554" height="257" key="GridCell.Tab.0.left" timestamp="1583497619048">
+    <state width="1554" height="280" key="GridCell.Tab.0.left" timestamp="1583574180629">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="257" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1583497619048" />
+    <state width="1554" height="280" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1583574180629" />
     <state width="2505" height="540" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570187" />
-    <state width="1554" height="257" key="GridCell.Tab.0.right" timestamp="1583497619049">
+    <state width="1554" height="280" key="GridCell.Tab.0.right" timestamp="1583574180631">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="257" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1583497619049" />
+    <state width="1554" height="280" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1583574180631" />
     <state width="2505" height="540" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570187" />
-    <state width="1554" height="257" key="GridCell.Tab.1.bottom" timestamp="1583497619052">
+    <state width="1554" height="257" key="GridCell.Tab.1.bottom" timestamp="1583562952416">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="257" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1583497619052" />
+    <state width="1554" height="257" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1583562952416" />
     <state width="2505" height="379" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570183" />
-    <state width="1554" height="257" key="GridCell.Tab.1.center" timestamp="1583497619051">
+    <state width="1554" height="257" key="GridCell.Tab.1.center" timestamp="1583562952415">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="257" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1583497619051" />
+    <state width="1554" height="257" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1583562952415" />
     <state width="2505" height="379" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570183" />
-    <state width="1554" height="257" key="GridCell.Tab.1.left" timestamp="1583497619050">
+    <state width="1554" height="257" key="GridCell.Tab.1.left" timestamp="1583562952415">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="257" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1583497619050" />
+    <state width="1554" height="257" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1583562952415" />
     <state width="2505" height="379" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570183" />
-    <state width="1554" height="257" key="GridCell.Tab.1.right" timestamp="1583497619051">
+    <state width="1554" height="257" key="GridCell.Tab.1.right" timestamp="1583562952415">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1554" height="257" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1583497619051" />
+    <state width="1554" height="257" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1583562952415" />
     <state width="2505" height="379" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582562570183" />
     <state x="411" y="163" width="1022" height="737" key="SettingsEditor" timestamp="1582614132879">
       <screen x="0" y="0" width="1600" height="900" />
@@ -260,14 +247,16 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python$Unittests_for_philosophy_test_phil_TestLinksExtractor_test_simple_link.coverage" NAME="Unittests for philosophy.test_phil.TestLinksExtractor.test_simple_link Coverage Results" MODIFIED="1583561436416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$divide.coverage" NAME="divide Coverage Results" MODIFIED="1582542778665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$homestat_stripped_.coverage" NAME="homestat_stripped  Coverage Results" MODIFIED="1582562004215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statistic" />
     <SUITE FILE_PATH="coverage/python$test.coverage" NAME="test Coverage Results" MODIFIED="1582880780198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$Unittests_for_test_homestat_TestStatistics.coverage" NAME="Unittests for test_homestat.TestStatistics Coverage Results" MODIFIED="1582562083170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statistic" />
-    <SUITE FILE_PATH="coverage/python$Unittests_in_test_phil_py.coverage" NAME="Unittests in test_phil.py Coverage Results" MODIFIED="1583497572768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$Unittests_in_test_phil_py.coverage" NAME="Unittests in test_phil.py Coverage Results" MODIFIED="1583561763210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$homestat_stripped__1_.coverage" NAME="homestat_stripped (1) Coverage Results" MODIFIED="1582615386522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/statistic" />
     <SUITE FILE_PATH="coverage/python$longdiv_stripped.coverage" NAME="longdiv_stripped Coverage Results" MODIFIED="1582219050472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/python$phil.coverage" NAME="phil Coverage Results" MODIFIED="1583497568624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/philosophy" />
+    <SUITE FILE_PATH="coverage/python$Unittests_for_philosophy_test_phil_TestLinksExtractor.coverage" NAME="Unittests for philosophy.test_phil.TestLinksExtractor Coverage Results" MODIFIED="1583573728541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python$phil.coverage" NAME="phil Coverage Results" MODIFIED="1583573723028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/philosophy" />
     <SUITE FILE_PATH="coverage/python$2.coverage" NAME="2 Coverage Results" MODIFIED="1580194598046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python$Unittests_for_statistic_test_homestat_TestStatistics.coverage" NAME="Unittests for statistic.test_homestat.TestStatistics Coverage Results" MODIFIED="1582616612837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
