@@ -60,8 +60,8 @@ def find_chain(start, finish):
     links = [current_title]
     while current_title != finish:
         j = None
-        if "Философия" in links:
-            j = get_content("Философия")
+        if finish in links:
+            j = get_content(finish)
         else:
             for link in links:
                 j = get_content(link)
@@ -71,7 +71,7 @@ def find_chain(start, finish):
         links = extract_links(j.content)
         chain.append(current_title)
         print(current_title)
-
+    return chain
 
 def main():
     find_chain(sys.argv[1], "Философия")
