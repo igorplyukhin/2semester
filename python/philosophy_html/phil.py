@@ -18,28 +18,28 @@ def extract_content(page):
         return 0, 0
     return re.search("<p>", page).start(), re.search(r"(?s:.*)Категории", page).end()
 
+
 def extract_links(page, begin, end):
     raw_links = re.findall(r"<a +href=[\",\']/wiki/(.+?)[\",\']", page[begin:end], re.IGNORECASE)
     links = []
-    for x in raw_links:
-        l = unquote(x)
-        if all(e not in l for e in ["#", "category", ":"]) and l not in links:
-            links.append(l)
+    for link in raw_links:
+        unquoted_link = unquote(link)
+        if all(e not in unquoted_link for e in ["#", "category", ":"]) and unquoted_link not in links:
+            links.append(unquoted_link)
     return links
 
 
 def find_chain(start, finish):
-    chain = []
-    current_title = start
+    chain = [start]
     links = [start]
+    current_title = start
     while current_title != finish:
-        content = None
         if finish in links:
             content = get_content(finish)
             current_title = finish
         else:
             for link in links:
-                if link not in chain:
+                if link not in chain or link == start:
                     content = get_content(link)
                     if content is not None:
                         current_title = link
@@ -49,10 +49,8 @@ def find_chain(start, finish):
         bounds = extract_content(content)
         links = extract_links(content, bounds[0], bounds[1])
         chain.append(current_title)
-        print(current_title)
-    if len(chain) == 0:
-        chain.append(start)
     return chain
+
 
 def main():
     find_chain("Философ", "Философия")
