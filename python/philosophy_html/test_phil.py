@@ -121,9 +121,9 @@ class TestChainFinder(unittest.TestCase):
         self._check('математика')
 
     def test_something(self):
+        self._check('Бумага')
         self._check('Архимед')
         self._check('Религия')
-        self._check('Бумага')
         self._check('Компьютер')
 
     def test_special_symbols(self):

@@ -5,10 +5,6 @@ import re
 
 
 def get_content(name):
-    """
-    Функция возвращает содержимое вики-страницы name из русской Википедии.
-    В случае ошибки загрузки или отсутствия страницы возвращается None.
-    """
     url = "https://ru.wikipedia.org/wiki/{}".format(quote(name))
     try:
         with urlopen(url) as response:
@@ -18,22 +14,11 @@ def get_content(name):
 
 
 def extract_content(page):
-    """
-    Функция принимает на вход содержимое страницы и возвращает 2-элементный
-    tuple, первый элемент которого — номер позиции, с которой начинается
-    содержимое статьи, второй элемент — номер позиции, на котором заканчивается
-    содержимое статьи.
-    Если содержимое отсутствует, возвращается (0, 0).
-    """
-    return
-
+    if page is None:
+        return 0, 0
+    return re.search("<p>", page).start(), re.search(r"(?s:.*)Категории", page).end()
 
 def extract_links(page, begin, end):
-    """
-    Функция принимает на вход содержимое страницы и начало и конец интервала,
-    задающего позицию содержимого статьи на странице и возвращает все имеющиеся
-    ссылки на другие вики-страницы без повторений и с учётом регистра.
-    """
     raw_links = re.findall(r"<a +href=[\",\']/wiki/(.+?)[\",\']", page[begin:end], re.IGNORECASE)
     links = []
     for x in raw_links:
@@ -44,12 +29,6 @@ def extract_links(page, begin, end):
 
 
 def find_chain(start, finish):
-    """
-    Функция принимает на вход название начальной и конечной статьи и возвращает
-    список переходов, позволяющий добраться из начальной статьи в конечную.
-    Первым элементом результата должен быть start, последним — finish.
-    Если построить переходы невозможно, возвращается None.
-    """
     chain = []
     current_title = start
     links = [start]
@@ -60,19 +39,23 @@ def find_chain(start, finish):
             current_title = finish
         else:
             for link in links:
-                if link not in chain and "год" not in link:
+                if link not in chain:
                     content = get_content(link)
                     if content is not None:
                         current_title = link
                         break
-        links = extract_links(content, 0, len(content) - 1)
+        if content is None:
+            return
+        bounds = extract_content(content)
+        links = extract_links(content, bounds[0], bounds[1])
         chain.append(current_title)
         print(current_title)
+    if len(chain) == 0:
+        chain.append(start)
     return chain
 
 def main():
-    find_chain("Философия", "Философия")
-    #print("Философия" in extract_links(get_content("Аристотель"), 0, 1000000))
+    find_chain("Философ", "Философия")
 
 
 if __name__ == '__main__':
