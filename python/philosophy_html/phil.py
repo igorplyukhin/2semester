@@ -2,6 +2,7 @@
 from urllib.request import urlopen
 from urllib.parse import quote, unquote
 import re
+import sys
 
 
 def get_content(name):
@@ -23,23 +24,24 @@ def extract_links(page, begin, end):
     raw_links = re.findall(r"<a +href=[\",\']/wiki/(.+?)[\",\']", page[begin:end], re.IGNORECASE)
     links = []
     for link in raw_links:
-        unquoted_link = unquote(link)
-        if all(e not in unquoted_link for e in ["#", "category", ":"]) and unquoted_link not in links:
-            links.append(unquoted_link)
+        unquoted_links = unquote(link)
+        if all(e not in unquoted_links for e in ["#", "category", ":"]) and unquoted_links not in links:
+            links.append(unquoted_links)
     return links
 
 
 def find_chain(start, finish):
-    chain = [start]
-    links = [start]
+    chain = []
     current_title = start
+    links = [start]
     while current_title != finish:
+        content = None
         if finish in links:
             content = get_content(finish)
             current_title = finish
         else:
             for link in links:
-                if link not in chain or link == start:
+                if link not in chain:
                     content = get_content(link)
                     if content is not None:
                         current_title = link
@@ -49,11 +51,13 @@ def find_chain(start, finish):
         bounds = extract_content(content)
         links = extract_links(content, bounds[0], bounds[1])
         chain.append(current_title)
+    if len(chain) == 0:
+        chain.append(start)
     return chain
 
 
 def main():
-    find_chain("Философ", "Философия")
+    print(find_chain(sys.argv[1], "Философия"))
 
 
 if __name__ == '__main__':
