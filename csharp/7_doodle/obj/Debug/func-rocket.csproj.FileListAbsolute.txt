@@ -1,0 +1,13 @@
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/bin/Debug/images/rocket.png
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/bin/Debug/images/target.png
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/bin/Debug/func-rocket.exe.config
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/bin/Debug/func-rocket.exe
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/bin/Debug/func-rocket.pdb
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/bin/Debug/nunit.framework.dll
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/obj/Debug/func-rocket.csprojAssemblyReference.cache
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/obj/Debug/func_rocket.Properties.Resources.resources
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/obj/Debug/func-rocket.csproj.GenerateResource.cache
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/obj/Debug/func-rocket.csproj.CoreCompileInputs.cache
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/obj/Debug/func-rocket.csproj.CopyComplete
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/obj/Debug/func-rocket.exe
+/home/igor/Desktop/repos/2semester/csharp/7_doodle/obj/Debug/func-rocket.pdb
