@@ -1,34 +1,40 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace func.brainfuck
 {
     public class BrainfuckBasicCommands
     {
-        private static Dictionary<string, string> constants = new Dictionary<string, string>
-        {
-            {"lowerAlph", "abcdefghijklmnopqrstuvwxyz"},
-            {"upperAlph", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"},
-            {"digits", "0123456789"}
-        };
+        static readonly List<Tuple<char, char>> bounds = new List<Tuple<char, char>>
+            {Tuple.Create('a', 'z'), Tuple.Create('A', 'Z'), Tuple.Create('0', '9')};
 
         public static void RegisterTo(IVirtualMachine vm, Func<int> read, Action<char> write)
         {
-            vm.RegisterCommand('.', b =>
-                write((char) vm.Memory[vm.MemoryPointer]));
+            vm.RegisterCommand('.', b => write((char) vm.Memory[vm.MemoryPointer]));
+            vm.RegisterCommand(',', b => vm.Memory[vm.MemoryPointer] = (byte) read());
             vm.RegisterCommand('+', b =>
-                vm.Memory[vm.MemoryPointer] = (byte) ((vm.Memory[vm.MemoryPointer] + 1) % 256));
+                vm.Memory[vm.MemoryPointer] = (byte) AddByModule(vm.Memory[vm.MemoryPointer], 1, 256));
             vm.RegisterCommand('-', b =>
-                vm.Memory[vm.MemoryPointer] = (byte) ((256 + vm.Memory[vm.MemoryPointer] - 1) % 256));
-            vm.RegisterCommand(',', b =>
-                vm.Memory[vm.MemoryPointer] = (byte) read());
+                vm.Memory[vm.MemoryPointer] = (byte) SubtractByModule(vm.Memory[vm.MemoryPointer], 1, 256));
             vm.RegisterCommand('>', b =>
-                vm.MemoryPointer = (vm.MemoryPointer + 1) % vm.Memory.Length);
+                vm.MemoryPointer = AddByModule(vm.MemoryPointer, 1, vm.Memory.Length));
             vm.RegisterCommand('<', b =>
-                vm.MemoryPointer = (vm.Memory.Length + vm.MemoryPointer - 1) % vm.Memory.Length);
-            foreach (var ch in constants.SelectMany(e => e.Value))
-                vm.RegisterCommand(ch, b => vm.Memory[vm.MemoryPointer] = (byte) ch);
+                vm.MemoryPointer = SubtractByModule(vm.MemoryPointer, 1, vm.Memory.Length));
+            RegisterAlphAndDigits(vm);
+        }
+        
+        private static int AddByModule(int a, int b, int module) => (a + b) % module;
+
+        private static int SubtractByModule(int a, int b, int module) => (module + a - b) % module;
+
+        private static void RegisterAlphAndDigits(IVirtualMachine vm)
+        {
+            foreach (var (start, end) in bounds)
+                for (var i = start; i <= end; i++)
+                {
+                    var ch = i;
+                    vm.RegisterCommand(ch, b => vm.Memory[vm.MemoryPointer] = (byte) ch);
+                }
         }
     }
 }

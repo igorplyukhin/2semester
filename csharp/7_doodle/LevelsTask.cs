@@ -18,17 +18,17 @@ namespace func_rocket
         {
             public DefaultLevel(string name = null, Rocket rocket = null, Vector target = null,
                 Gravity gravity = null, Physics physics = null) : 
-                base(name, rocket, target, gravity, physics)
+                base("no name", LevelsTask.rocket, LevelsTask.target, (size, l) => Vector.Zero, standardPhysics)
             {
-                if (name == null)
-                    name = "No Name";
-                if (rocket == null)
+                if (name != null)
+                    Level.Name = name;
+                if (rocket != null)
                     rocket = LevelsTask.rocket;
-                if (target == null)
+                if (target != null)
                     target = LevelsTask.target;
-                if (gravity == null)
+                if (gravity != null)
                     gravity = (size, l) => Vector.Zero;
-                if (physics == null)
+                if (physics != null)
                     physics = standardPhysics;
             } 
         }

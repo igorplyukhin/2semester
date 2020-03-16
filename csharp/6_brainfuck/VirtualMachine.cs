@@ -1,11 +1,16 @@
 using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace func.brainfuck
 {
 	public class VirtualMachine : IVirtualMachine
 	{
+		readonly Dictionary<char, Action<IVirtualMachine>> commands;
+		public string Instructions { get; }
+		public int InstructionPointer { get; set; }
+		public byte[] Memory { get; }
+		public int MemoryPointer { get; set; }
+		
 		public VirtualMachine(string program, int memorySize)
 		{
 			Instructions = program;
@@ -16,21 +21,14 @@ namespace func.brainfuck
 
 		public void RegisterCommand(char symbol, Action<IVirtualMachine> execute) => commands.Add(symbol, execute);
 
-		private Dictionary<char, Action<IVirtualMachine>> commands { get; }
-		public string Instructions { get; }
-		public int InstructionPointer { get; set; }
-		public byte[] Memory { get; }
-
-		public int MemoryPointer { get; set; }
-
 		public void Run()
 		{
-			for (InstructionPointer = InstructionPointer; InstructionPointer < Instructions.Length; InstructionPointer++)
+			while (InstructionPointer < Instructions.Length)
 			{
 				var command = Instructions[InstructionPointer];
-				if (!commands.ContainsKey(command))
-					continue;
-				commands[command](this);
+				if (commands.TryGetValue(command, out var value))
+					commands[command](this);
+				InstructionPointer++;
 			}
 		}
 	}
