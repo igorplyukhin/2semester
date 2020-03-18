@@ -11,7 +11,30 @@ namespace linq_slideviews
 		/// <remarks>Метод должен пропускать некорректные строки, игнорируя их</remarks>
 		public static IDictionary<int, SlideRecord> ParseSlideRecords(IEnumerable<string> lines)
 		{
-			throw new NotImplementedException();
+			var slides = new Dictionary<int, SlideRecord>();
+			var isFirstIteration = true;
+			foreach (var e in lines)
+			{
+				if (isFirstIteration)
+				{
+					isFirstIteration = false;
+					continue;
+				}
+
+				try
+				{
+					var splittedLine = e.Split(';');
+					var slideId = int.Parse(splittedLine[0]);
+					var slideType = (SlideType)Enum.Parse(typeof(SlideType), splittedLine[1]);
+					var unitTitle = splittedLine[2];
+					slides.Add(slideId, new SlideRecord(slideId, slideType, unitTitle));
+				}
+				catch (Exception exception)
+				{
+				}
+			}
+
+			return slides;
 		}
 
 		/// <param name="lines">все строки файла, которые нужно распарсить. Первая строка — заголовочная.</param>
