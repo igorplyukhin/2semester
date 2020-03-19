@@ -8,7 +8,12 @@ namespace linq_slideviews
 	{
 		public static double GetMedianTimePerSlide(List<VisitRecord> visits, SlideType slideType)
 		{
-			throw new NotImplementedException();
+			var l = visits
+				.OrderBy(x => x.DateTime)
+				.GroupBy(x => x.UserId);
+
+			var r = 0;
+			return r;
 		}
 	}
 }

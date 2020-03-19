@@ -4,48 +4,53 @@ using System.Linq;
 
 namespace linq_slideviews
 {
-	public class ParsingTask
-	{
-		/// <param name="lines">все строки файла, которые нужно распарсить. Первая строка заголовочная.</param>
-		/// <returns>Словарь: ключ — идентификатор слайда, значение — информация о слайде</returns>
-		/// <remarks>Метод должен пропускать некорректные строки, игнорируя их</remarks>
-		public static IDictionary<int, SlideRecord> ParseSlideRecords(IEnumerable<string> lines)
-		{
-			var slides = new Dictionary<int, SlideRecord>();
-			var isFirstIteration = true;
-			foreach (var e in lines)
-			{
-				if (isFirstIteration)
-				{
-					isFirstIteration = false;
-					continue;
-				}
+    public class ParsingTask
+    {
+        public static IDictionary<int, SlideRecord> ParseSlideRecords(IEnumerable<string> lines)
+        {
+            var slides = new Dictionary<int, SlideRecord>();
+            foreach (var e in lines)
+            {
+                var splittedLine = e.Split(';');
+                if (splittedLine.Length < 2)
+                    continue;
+                if (splittedLine[0] == "SlideId")
+                    continue;
+                if (!int.TryParse(splittedLine[0], out var slideId))
+                    continue;
+                if (!Enum.TryParse(splittedLine[1], true, out SlideType slideType))
+                    continue;
+                var unitTitle = splittedLine[2];
+                slides.Add(slideId, new SlideRecord(slideId, slideType, unitTitle));
+            }
 
-				try
-				{
-					var splittedLine = e.Split(';');
-					var slideId = int.Parse(splittedLine[0]);
-					var slideType = (SlideType)Enum.Parse(typeof(SlideType), splittedLine[1]);
-					var unitTitle = splittedLine[2];
-					slides.Add(slideId, new SlideRecord(slideId, slideType, unitTitle));
-				}
-				catch (Exception exception)
-				{
-				}
-			}
+            return slides;
+        }
 
-			return slides;
-		}
+        public static IEnumerable<VisitRecord> ParseVisitRecords(
+            IEnumerable<string> lines, IDictionary<int, SlideRecord> slides)
+        {
+            var visits = new List<VisitRecord>();
+            foreach (var e in lines)
+            {
+                try
+                {
+                    var splittedLine = e.Split(';');
+                    if (splittedLine[0] == "UserId")
+                        continue;
+                    var userId = int.Parse(splittedLine[0]);
+                    var slideId = int.Parse(splittedLine[1]);
+                    var dateTime = DateTime.Parse($"{splittedLine[2]} {splittedLine[3]}");
+                    var slideType = slides[slideId].SlideType;
+                    visits.Add(new VisitRecord(userId, slideId, dateTime, slideType));
+                }
+                catch
+                {
+                    throw new FormatException($"Wrong line [{e}]");
+                }
+            }
 
-		/// <param name="lines">все строки файла, которые нужно распарсить. Первая строка — заголовочная.</param>
-		/// <param name="slides">Словарь информации о слайдах по идентификатору слайда. 
-		/// Такой словарь можно получить методом ParseSlideRecords</param>
-		/// <returns>Список информации о посещениях</returns>
-		/// <exception cref="FormatException">Если среди строк есть некорректные</exception>
-		public static IEnumerable<VisitRecord> ParseVisitRecords(
-			IEnumerable<string> lines, IDictionary<int, SlideRecord> slides)
-		{
-			throw new NotImplementedException();
-		}
-	}
+            return visits;
+        }
+    }
 }

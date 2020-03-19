@@ -59,7 +59,6 @@ namespace linq_slideviews
 			);
 
 			Assert.That(exception.Message, Is.EqualTo("Wrong line [very wrong line!]"));
-
 		}
 
 		[Test]
