@@ -1,0 +1,10 @@
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/bin/Debug/hw.exe
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/bin/Debug/hw.pdb
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/bin/Debug/nunit.framework.dll
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/bin/Debug/nunit.framework.pdb
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/bin/Debug/nunit.framework.xml
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/obj/Debug/hw.csprojAssemblyReference.cache
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/obj/Debug/hw.csproj.CoreCompileInputs.cache
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/obj/Debug/hw.csproj.CopyComplete
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/obj/Debug/hw.exe
+/home/igor/Desktop/repos/2semester/csharp/hw/hw/obj/Debug/hw.pdb
