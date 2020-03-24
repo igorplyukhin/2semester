@@ -9,11 +9,12 @@ namespace linq_slideviews
 		public static double Median(this IEnumerable<double> items)
 		{
 			var sortedItems = items.OrderBy(x => x).ToList();
-			if (sortedItems.Count == 0)
+			var itemsCount = sortedItems.Count;
+			if (itemsCount == 0)
 				throw new InvalidOperationException();
-			if (sortedItems.Count % 2 == 0)
-				return (sortedItems[sortedItems.Count / 2] + sortedItems[sortedItems.Count / 2 - 1]) / 2; 
-			return sortedItems[sortedItems.Count / 2];
+			if (itemsCount % 2 == 0)
+				return (sortedItems[itemsCount / 2] + sortedItems[itemsCount / 2 - 1]) / 2; 
+			return sortedItems[itemsCount / 2];
 		}
 
 		public static IEnumerable<Tuple<T, T>> Bigrams<T>(this IEnumerable<T> items)
