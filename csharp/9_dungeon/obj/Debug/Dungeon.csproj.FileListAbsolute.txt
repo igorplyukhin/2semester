@@ -1,0 +1,15 @@
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/bin/Debug/Dungeons/Dungeon4.txt
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/bin/Debug/Dungeons/Dungeon3.txt
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/bin/Debug/Dungeons/Dungeon2.txt
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/bin/Debug/Dungeons/Dungeon1.txt
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/bin/Debug/Dungeon.exe.config
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/bin/Debug/Dungeon.exe
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/bin/Debug/Dungeon.pdb
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/bin/Debug/nunit.framework.dll
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/obj/Debug/Dungeon.csprojAssemblyReference.cache
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/obj/Debug/Dungeon.Properties.Resources.resources
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/obj/Debug/Dungeon.csproj.GenerateResource.cache
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/obj/Debug/Dungeon.csproj.CoreCompileInputs.cache
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/obj/Debug/Dungeon.csproj.CopyComplete
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/obj/Debug/Dungeon.exe
+/home/igor/Desktop/repos/2semester/csharp/9_dungeon/obj/Debug/Dungeon.pdb
