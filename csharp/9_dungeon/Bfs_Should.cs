@@ -33,7 +33,7 @@ namespace Dungeon
                 "C "
             };
             var map = Map.FromLines(textMap);
-            var expectedLengths = new[] { 2 };
+            var expectedLengths = new[] {2};
 
             var paths = GetPaths(map);
 
@@ -50,7 +50,7 @@ namespace Dungeon
                 "C  "
             };
             var map = Map.FromLines(textMap);
-            var expectedLengths = new[] { 5 };
+            var expectedLengths = new[] {5};
 
             var paths = GetPaths(map);
 
@@ -67,7 +67,7 @@ namespace Dungeon
                 " C "
             };
             var map = Map.FromLines(textMap);
-            var expectedLengths = new[] { 2 };
+            var expectedLengths = new[] {2};
 
             var paths = GetPaths(map);
 
@@ -84,7 +84,7 @@ namespace Dungeon
                 " C "
             };
             var map = Map.FromLines(textMap);
-            var expectedLengths = new[] { 2, 2, 2, 2 };
+            var expectedLengths = new[] {2, 2, 2, 2};
 
             var paths = GetPaths(map);
 
@@ -100,7 +100,7 @@ namespace Dungeon
                 "CP",
             };
             var map = Map.FromLines(textMap);
-            var expectedLengths = new[] { 3, 2, 2 };
+            var expectedLengths = new[] {3, 2, 2};
 
             var paths = GetPaths(map)
                 .OrderByDescending(x => x.Count)
@@ -113,7 +113,7 @@ namespace Dungeon
         public void Return_ShortestPaths_OnBigTestDangeon()
         {
             var map = Map.FromText(Properties.Resources.BigTestDungeon);
-            var expectedLengths = new[] { 170, 156, 144, 137, 84 };
+            var expectedLengths = new[] {170, 156, 144, 137, 84};
 
             var paths = GetPaths(map)
                 .OrderByDescending(x => x.Count)
@@ -134,14 +134,14 @@ namespace Dungeon
             });
             var miniPaths = GetPaths(miniMap);
 
-            AssertPaths(miniPaths, miniMap, new[] { 2, 2, 2, 2 });
+            AssertPaths(miniPaths, miniMap, new[] {2, 2, 2, 2});
 
             var map = Map.FromText(Properties.Resources.BigTestDungeon);
             var paths = GetPaths(map)
                 .OrderByDescending(x => x.Count)
                 .ToArray();
 
-            AssertPaths(paths, map, new[] { 170, 156, 144, 137, 84 });
+            AssertPaths(paths, map, new[] {170, 156, 144, 137, 84});
         }
 
         private static List<Point>[] GetPaths(Map map)
@@ -161,11 +161,13 @@ namespace Dungeon
 
             var expectedPathCount = expectedLengths.Length;
 
-            Assert.AreEqual(expectedPathCount, paths.Length, $"The number of returned paths should be {expectedPathCount}");
+            Assert.AreEqual(expectedPathCount, paths.Length,
+                $"The number of returned paths should be {expectedPathCount}");
             for (var i = 0; i < paths.Length; i++)
             {
                 AssertPath(map, paths[i], expectedLengths[i]);
             }
+
             Assert.AreEqual(expectedPathCount, uniqueEndpoints.Length, "Each path must lead to unique chest");
         }
 
@@ -173,15 +175,20 @@ namespace Dungeon
         {
             var directions = Walker.PossibleDirections.Select(s => new Point(s)).ToList();
             Assert.IsNotEmpty(path, "path should not be empty");
-            Assert.Contains(path[0], map.Chests, $"The first point in the path should be one of the chest, but was {path[0]}");
+            Assert.Contains(path[0], map.Chests,
+                $"The first point in the path should be one of the chest, but was {path[0]}");
             for (var i = 0; i < path.Count - 1; i++)
             {
                 Point offset = path[i + 1] - new Size(path[i]);
-                Assert.IsTrue(directions.Contains(offset), $"Incorrect step #{i} in your path: from {path[i]} to {path[i + 1]}");
-                Assert.AreNotEqual(MapCell.Wall, map.Dungeon[path[i + 1].X, path[i + 1].Y], $"Collided with wall at {i}th path point: {path[i + 1]}");
+                Assert.IsTrue(directions.Contains(offset),
+                    $"Incorrect step #{i} in your path: from {path[i]} to {path[i + 1]}");
+                Assert.AreNotEqual(MapCell.Wall, map.Dungeon[path[i + 1].X, path[i + 1].Y],
+                    $"Collided with wall at {i}th path point: {path[i + 1]}");
             }
+
             Assert.AreEqual(map.InitialPosition, path.Last(), "The last point in path must be 'start'");
-            Assert.GreaterOrEqual(path.Count, expectedLength, "Checker bug?! Leave a comment above this slide, to notify task authors, please");
+            Assert.GreaterOrEqual(path.Count, expectedLength,
+                "Checker bug?! Leave a comment above this slide, to notify task authors, please");
             Assert.AreEqual(expectedLength, path.Count, "Your path is not the shortest one");
         }
     }

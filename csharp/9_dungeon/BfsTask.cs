@@ -10,12 +10,14 @@ namespace Dungeon
     {
         public static IEnumerable<SinglyLinkedList<Point>> FindPaths(Map map, Point start, Point[] chests)
         {
-            return chests.Select(e => FindShortestPath(map, e, start));
+            var a = FindShortestPath(map, start, map.InitialPosition);
+                if (a != null)
+                    yield return a;
         }
 
         private static SinglyLinkedList<Point> FindShortestPath(Map map, Point start, Point finish)
         {
-            var track = new Dictionary<Point, Point> {[start] = Point.Empty};
+            var track = new Dictionary<Point, Point> {[start] = new Point(int.MinValue, int.MinValue)};
             var queue = new Queue<Point>();
             queue.Enqueue(start);
             var width = map.Dungeon.GetLength(0);
@@ -24,28 +26,34 @@ namespace Dungeon
             while (queue.Count != 0)
             {
                 var point = queue.Dequeue();
-                if (point.X < 0 || point.X >= width || point.Y < 0 || point.Y >= height) continue;
-                if (map.Dungeon[point.X, point.Y] != MapCell.Empty) continue;
+                
 
                 for (var dy = -1; dy <= 1; dy++)
                 for (var dx = -1; dx <= 1; dx++)
                 {
                     var nextPoint = new Point(point.X + dx, point.Y + dy);
-                    if (dx != 0 && dy != 0 ||  track.ContainsKey(nextPoint)) continue;
-                    track[nextPoint] = point;
-                    queue.Enqueue(new Point {X = point.X + dx, Y = point.Y + dy});
+                    if (dx != 0 && dy != 0 || track.ContainsKey(nextPoint)) continue;
+                    if (nextPoint.X < 0 || nextPoint.X >= width || nextPoint.Y < 0 || nextPoint.Y >= height) continue;
+                    if (map.Dungeon[nextPoint.X, nextPoint.Y] != MapCell.Empty) continue;
+                    track.Add(nextPoint, point);
+                    queue.Enqueue(nextPoint);
                 }
-                
+
                 if (track.ContainsKey(finish)) break;
             }
 
+            if (!track.ContainsKey(finish))
+                return null;
             var item = finish;
             var l = new SinglyLinkedList<Point>(item);
-            while (item != null)
-            {
-                l = new SinglyLinkedList<Point>(track[item], l);
-            }
+            item = track[item];
 
+            while (item.X != int.MinValue && item.Y != int.MinValue)
+            {
+                l = new SinglyLinkedList<Point>(item, l);
+                item = track[item];
+            }
+            
             return l;
         }
     }
