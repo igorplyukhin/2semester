@@ -4,11 +4,6 @@
     <list default="true" id="fd1a6a18-847a-4c10-b633-acd3774f7d3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../csharp/9_dungeon/BfsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/9_dungeon/BfsTask.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../csharp/9_dungeon/Bfs_Should.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/9_dungeon/Bfs_Should.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../csharp/9_dungeon/obj/Debug/Dungeon.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/9_dungeon/obj/Debug/Dungeon.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +36,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../webserver" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -182,6 +177,7 @@
       <workItem from="1584693925606" duration="2183000" />
       <workItem from="1584961041431" duration="59000" />
       <workItem from="1585296603247" duration="2153000" />
+      <workItem from="1585412523330" duration="209000" />
     </task>
     <servers />
   </component>
@@ -196,11 +192,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="220" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1582558353328" />
-    <state x="923" y="306" width="424" height="520" key="FileChooserDialogImpl" timestamp="1584961099080">
+    <state x="923" y="306" width="424" height="520" key="FileChooserDialogImpl" timestamp="1585412731348">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="577" y="197" width="424" height="520" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1584514756647" />
-    <state x="923" y="306" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1584961099080" />
+    <state x="923" y="306" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1585412731348" />
     <state width="1602" height="234" key="GridCell.Tab.0.bottom" timestamp="1585303204897">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
