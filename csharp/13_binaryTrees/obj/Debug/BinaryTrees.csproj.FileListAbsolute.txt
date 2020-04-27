@@ -1,0 +1,10 @@
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\bin\Debug\BinaryTrees.exe.config
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\bin\Debug\BinaryTrees.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\bin\Debug\BinaryTrees.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\bin\Debug\nunit.framework.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\bin\Debug\nunitlite.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\obj\Debug\BinaryTrees.csprojAssemblyReference.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\obj\Debug\BinaryTrees.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\obj\Debug\BinaryTrees.csproj.CopyComplete
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\obj\Debug\BinaryTrees.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\13_binaryTrees\obj\Debug\BinaryTrees.pdb

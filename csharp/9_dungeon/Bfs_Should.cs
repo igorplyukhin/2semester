@@ -8,7 +8,7 @@ namespace Dungeon
     [TestFixture]
     public class Bfs_Should
     {
-        /*[Test, Order(0)]
+        [Test, Order(0)]
         public void ReturnNoPaths_WhenNoPathsToChests()
         {
             var textMap = new[]
@@ -22,7 +22,7 @@ namespace Dungeon
             var paths = GetPaths(map);
 
             Assert.IsEmpty(paths);
-        }*/
+        }
 
         [Test, Order(1)]
         public void ReturnCorrectPaths_OnEmptyDungeon()

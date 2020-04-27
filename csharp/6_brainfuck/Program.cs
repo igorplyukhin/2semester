@@ -6,7 +6,7 @@ namespace func.brainfuck
 {
 	public class Program
 	{
-		private const string sierpinskiTriangleBrainfuckProgram = @"
+		public const string sierpinskiTriangleBrainfuckProgram = @"
                                 >
                                + +
                               +   -

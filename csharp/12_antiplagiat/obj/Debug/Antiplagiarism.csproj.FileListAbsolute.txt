@@ -1,0 +1,10 @@
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\bin\Debug\Antiplagiarism.exe.config
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\bin\Debug\Antiplagiarism.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\bin\Debug\Antiplagiarism.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\bin\Debug\nunit.framework.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\bin\Debug\nunitlite.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\obj\Debug\Antiplagiarism.csprojAssemblyReference.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\obj\Debug\Antiplagiarism.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\obj\Debug\Antiplagiarism.csproj.CopyComplete
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\obj\Debug\Antiplagiarism.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\12_antiplagiat\obj\Debug\Antiplagiarism.pdb

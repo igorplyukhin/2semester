@@ -1,0 +1,15 @@
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\bin\Debug\Dungeons\Dungeon1.txt
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\bin\Debug\Dungeons\Dungeon2.txt
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\bin\Debug\Dungeons\Dungeon3.txt
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\bin\Debug\Dungeons\Dungeon4.txt
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\bin\Debug\Rivals.exe.config
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\bin\Debug\Rivals.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\bin\Debug\Rivals.pdb
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\bin\Debug\nunit.framework.dll
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\obj\Debug\Rivals.csprojAssemblyReference.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\obj\Debug\Rivals.Properties.Resources.resources
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\obj\Debug\Rivals.csproj.GenerateResource.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\obj\Debug\Rivals.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\obj\Debug\Rivals.csproj.CopyComplete
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\obj\Debug\Rivals.exe
+C:\Users\Igor\Desktop\git\2semester\csharp\10_Rivals\obj\Debug\Rivals.pdb
