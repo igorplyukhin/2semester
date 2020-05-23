@@ -16,3 +16,5 @@ packages/*
 *.sln.iml
 .vs
 *.csproj
+Assemblies/
+packages/
