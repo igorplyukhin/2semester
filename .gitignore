@@ -18,7 +18,7 @@ packages/*
 *.csproj
 Assemblies/
 packages/
-.config
+*.config
 *.dll
 *.sln
 Properties/
